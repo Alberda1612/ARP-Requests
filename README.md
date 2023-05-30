@@ -37,3 +37,14 @@ The four lines of replies represent the response received from the default gatew
 
 The ping statistics summarizes the process. We can see that 4 packets were sent and all 4 were received by the default gateway which shows a 0% loss of packet. 
 The ping showed that there was successful communication with the default gateway without any packet loss.
+
+A **_ping_** was made to PC1 from PC2.
+
+![](UnsuccessfulPing.jpg)
+
+## Explanation
+From the diagram above, we can see that the attempt to ping PC1 with IPv4 address 172.20.10.3 failed. The request timed out shows no response from PC1. This could be due to firewall blockage on the devices trying to communicate. Therefore, a change in the firewall settings were made to unblock traffic. 
+A second attempt to ping PC1 was successful as shown in the snapshot below. 
+
+![](OtherPcPing.jpg)
+
