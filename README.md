@@ -37,6 +37,9 @@ The four lines of replies represent the response received from the default gatew
 
 The ping statistics summarizes the process. We can see that 4 packets were sent and all 4 were received by the default gateway which shows a 0% loss of packet. 
 The ping showed that there was successful communication with the default gateway without any packet loss.
+## Examining Captured Data on wireshark
+
+![]()
 
 A **_ping_** was made to PC1 from PC2.
 
