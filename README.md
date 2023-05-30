@@ -27,3 +27,12 @@ The windows command prompt was used to issue the command **_ipconfig /all_** to 
 
 ![](OtherPcConfig.jpg)
 
+A **_ping_** command was issued to the Default Gateway. 
+![](DGping.JPG)
+
+### Explanation
+A ping to the default gateway with IPv4 address 172.20.10.1 was made. Each packet has a size of 32 bytes.
+The four lines of replies represent the response received from the default gateway. The round trip time for the first packet was 7 milliseconds, second packet was 2 milliseconds, third packet was 1 millisecond and the fourth is 6 milliseconds. The time to live (TTL) value of packet is 64 seconds.
+
+The ping statistics summarizes the process. We can see that 4 packets were sent and all 4 were received by the default gateway which shows a 0% loss of packet. 
+The ping showed that there was successful communication with the default gateway without any packet loss.
