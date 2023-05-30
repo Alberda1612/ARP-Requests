@@ -48,3 +48,4 @@ A second attempt to ping PC1 was successful as shown in the snapshot below.
 
 ![](OtherPcPing.jpg)
 
+## Examining Captured Data
