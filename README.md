@@ -28,6 +28,7 @@ The windows command prompt was used to issue the command **_ipconfig /all_** to 
 ![](OtherPcConfig.jpg)
 
 A **_ping_** command was issued to the Default Gateway. 
+
 ![](DGping.JPG)
 
 ### Explanation
