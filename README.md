@@ -33,13 +33,31 @@ A **_ping_** command was issued to the Default Gateway.
 
 ### Explanation
 A ping to the default gateway with IPv4 address 172.20.10.1 was made. Each packet has a size of 32 bytes.
-The four lines of replies represent the response received from the default gateway. The round trip time for the first packet was 7 milliseconds, second packet was 2 milliseconds, third packet was 1 millisecond and the fourth is 6 milliseconds. The time to live (TTL) value of packet is 64 seconds.
+The four lines of replies represent the response received from the default gateway. The round trip time for the first packet was 7 milliseconds, second packet was 2 milliseconds, third packet was 1 millisecond and the fourth is 6 milliseconds. The time to live (TTL) value of packet is 64.
 
 The ping statistics summarizes the process. We can see that 4 packets were sent and all 4 were received by the default gateway which shows a 0% loss of packet. 
 The ping showed that there was successful communication with the default gateway without any packet loss.
+
 ## Examining Captured Data on wireshark
+### The Request
+
+![](DGarpRequest.JPG)
+
+![](DGarpInfo.JPG)
+
+From the diagrams above, we can see that an ARP request was made to find out the MAC address of the default gateway. The information in the request is **_"Who has 172.20.10.1? Tell 172.20.10.3_**.
+We can see the source MAC address which is the address of the sender of the ARP request, a destination Mac address which is a broadcast. 
+Hence, it uses the default broadcast address ff:ff:ff:ff:ff:ff. 
+The protocol type, IPv4 (0x0800) informs the Network Interface Card (NIC) that the data needs to be passsed to the ARP process.
+
+### The Reply
 
 ![]()
+
+![]()
+
+The information in the reply displays **_172.20.10.1 is at 8a:19:08:8c:a5:64_**. In second diagram displayed above, we see that we now have the target MAC address and the reply was sent as a unicast to the sender of the request.
+
 
 A **_ping_** was made to PC1 from PC2.
 
@@ -51,4 +69,20 @@ A second attempt to ping PC1 was successful as shown in the snapshot below.
 
 ![](OtherPcPing.jpg)
 
+A ping to PC1 with IPv4 address 172.20.10.3 was made. Each packet has a size of 32 bytes.
+The four lines of replies represent the response received from the default gateway. The round trip time for the first packet was 79 milliseconds, second packet was 70 milliseconds, third packet was 67 millisecond and the fourth is 90 milliseconds. The time to live (TTL) value of packet is 128.
+
+The ping statistics summarizes the process. We can see that 4 packets were sent and all 4 were received by PC2 which shows a 0% loss of packet. 
+The ping showed that there was successful communication with PC2 without any packet loss.
+
+
 ## Examining Captured Data
+### The Request
+
+![](PC2request.JPG)
+
+![](PC2Info.JPG)
+
+### The Reply
+
+![](PC2requestReply.JPG)
