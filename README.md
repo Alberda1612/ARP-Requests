@@ -95,5 +95,13 @@ The protocol type, IPv4 (0x0800) informs the Network Interface Card (NIC) that t
 
 ![](PC2arpReplyInfo.JPG)
 
-The information in the reply displays **_172.20.10.2 is at b4:b5:b6:c9:9f:85_**. In second diagram displayed above, we see that we now have the target MAC address and the reply was sent as a unicast to PC2.
+The information in the reply displays **_172.20.10.3 is at b4:b5:b6:c9:9f:85_**. In second diagram displayed above, we see that we now have the target MAC address and the reply was sent as a unicast to PC2.
 
+## Viewing ARP Cache Entries
+
+After a successful ARP process, the MAC addresses along with their corresponding IPv4 addresses are stored in Cache memory on the PC.
+This is permanently removed after a sepcific perioid of time usually about 15-45 seconds. 
+
+The command **_arp -a_** was issued in the windows command prompt to get the ARP table which has a list of stored MAC and IPv4 addresses.
+
+![]()
