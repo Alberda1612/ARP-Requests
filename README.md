@@ -52,10 +52,10 @@ The protocol type, IPv4 (0x0800) informs the Network Interface Card (NIC) that t
 
 ### The Reply
 
-![]()
+![](DGarpReply.JPG)
 
 
-![]()
+![](DGarpReplyInfo.JPG)
 
 The information in the reply displays **_172.20.10.1 is at 8a:19:08:8c:a5:64_**. In second diagram displayed above, we see that we now have the target MAC address and the reply was sent as a unicast to the sender of the request.
 
