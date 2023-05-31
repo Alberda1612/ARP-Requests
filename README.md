@@ -104,4 +104,6 @@ This is permanently removed after a sepcific perioid of time usually about 15-45
 
 The command **_arp -a_** was issued in the windows command prompt to get the ARP table which has a list of stored MAC and IPv4 addresses.
 
-![]()
+![](arpcache.JPG)
+
+# THANK YOU smiley: 
