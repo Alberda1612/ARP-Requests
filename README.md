@@ -84,6 +84,16 @@ The ping showed that there was successful communication with PC2 without any pac
 
 ![](PC2Info.JPG)
 
+From the diagrams above, we can see that an ARP request was made to find out the MAC address of PC1. The information in the request is **_"Who has 172.20.10.3? Tell 172.20.10.5_**.
+We can see the source MAC address which is the address of the sender of the ARP request, a destination Mac address which is a broadcast. 
+Hence, it uses the default broadcast address ff:ff:ff:ff:ff:ff. 
+The protocol type, IPv4 (0x0800) informs the Network Interface Card (NIC) that the data needs to be passsed to the ARP process.
+
 ### The Reply
 
-![](PC2requestReply.JPG)
+![](PC2arpReply.JPG)
+
+![](PC2arpReplyInfo.JPG)
+
+The information in the reply displays **_172.20.10.2 is at b4:b5:b6:c9:9f:85_**. In second diagram displayed above, we see that we now have the target MAC address and the reply was sent as a unicast to PC2.
+
